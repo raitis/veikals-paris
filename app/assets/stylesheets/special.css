@@ -1,0 +1,98 @@
+#special {
+	margin: auto;
+	width: 100%;
+	max-width: 800px;
+	background-color: transparent;
+
+	min-height: 400px;
+	height: auto;
+	padding-bottom: 150px;
+}
+
+.st-accordion{
+    width:100%;
+    min-width:270px;
+    margin: 0 auto;
+    text-align: left;
+}
+.st-accordion ul li{
+    height: 50px;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.8)
+}
+.st-accordion ul li:first-child{
+    border-top:none;
+}
+.st-accordion ul li > a{
+    text-shadow: 1px 1px 1px #fff;
+    font-size: 22px;
+    display: block;
+    font-weight: bolder;
+	position: relative;
+	color: rgba(0, 0, 0, 0.8);
+    line-height: 50px;
+	outline:none;
+    -webkit-transition:  color 0.2s ease-in-out;
+	-moz-transition:  color 0.2s ease-in-out;
+	-o-transition:  color 0.2s ease-in-out;
+	-ms-transition:  color 0.2s ease-in-out;
+	transition:  color 0.2s ease-in-out;
+}
+.st-accordion ul li > a span{
+	background: transparent url(/assets/down.png) no-repeat center center;
+	text-indent:-9000px;
+	width: 26px;
+	height: 14px;
+	position: absolute;
+	text-decoration: none;
+	top: 50%;
+	right: -26px;
+	margin-top: -7px;
+	opacity:0;
+	-webkit-transition:  all 0.2s ease-in-out;
+	-moz-transition:  all 0.2s ease-in-out;
+	-o-transition:  all 0.2s ease-in-out;
+	-ms-transition:  all 0.2s ease-in-out;
+	transition:  all 0.2s ease-in-out;
+}
+.st-accordion ul li > a:hover{
+    color: rgba(250,50,0, 1);
+}
+.st-accordion ul li > a:hover span{
+	opacity:1;
+	right: 10px;
+}
+.st-accordion ul li.st-open > a{
+    color: rgba(250, 50, 0, 0.8);
+    text-decoration: none;
+}
+.st-accordion ul li.st-open > a span{
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+    transform:rotate(180deg);
+	right:10px;
+	opacity:1;
+}
+.st-content{
+    padding: 5px 0px 30px 0px;
+    font-family: verdana;
+    text-align: center;
+}
+.st-content p{
+    font-size:  16px;
+    line-height:  28px;
+    padding: 0px 4px 15px 4px; 
+    text-align: left;
+}
+
+a.special {
+	color: #ff5500;
+	text-decoration: none;
+}
+
+a.special:hover {
+	color: #ffffff;
+	text-decoration: underline;
+
+	background-color: transparent;
+}

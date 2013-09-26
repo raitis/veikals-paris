@@ -1,0 +1,11 @@
+#content {
+	height: 700px;
+	width: 100%;
+	max-width: 800px;
+	padding-top: 40px;
+	margin: auto;
+	text-align: left;
+	background-color: transparent;
+
+	font-family: verdana;
+}

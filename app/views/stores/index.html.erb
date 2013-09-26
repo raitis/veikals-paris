@@ -1,0 +1,326 @@
+<% set_title "veikali" %>
+
+<% @extra_head_content = capture do %>
+<%= stylesheet_link_tag 'jquery.fancybox.css?v=2.1.5' %>
+<%= stylesheet_link_tag 'floating_menu' %>
+<%= javascript_include_tag 'jquery-1.10.1.min.js' %>
+<%= javascript_include_tag 'jquery.fancybox.js?v=2.1.5' %>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript"> 
+	$(document).ready(function() { 
+		$(".fancybox").fancybox(); 
+	});
+
+	jQuery(document).ready(function($) {
+ 
+	$(".scroll").click(function(event){		
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+	});
+});
+</script>
+<% end %>
+
+<div id='floating_menu'>
+<ul>
+   <li><a class="scroll" href='#nometnu'><span>Nometņu iela</span></a></li>
+   <li><a class="scroll" href='#matisa'><span>Matīsa iela</span></a></li>
+   <li><a class="scroll" href='#nicgales'><span>Nīcgales iela</span></a></li>
+   <li><a class="scroll" href='#avotu'><span>Avotu iela</span></a></li>
+   <li><a class="scroll" href='#valdeku'><span>Valdeķu iela</span></a></li>
+   <li class='last'><a class="scroll" href='#jelgava'><span>Lielā iela</span></a></li>
+</ul>
+</div>
+
+<div id="nometnu" class="store">
+<table class="store" valign="top" cellpadding="5">
+	<tr><td colspan="2"><h2>Rīga, Nometņu iela 59c  <span class="phone"><%= t "stores.phone" %>: 67821577</span></h2></td></tr>
+	<tr>
+		<td rowspan="3" align="left">
+			<iframe width="300" height="285" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=R%C4%ABga%2C%2BNomet%C5%86u%2Biela%2B59c(Nomet%C5%86u+iela+59c)&ie=UTF8&z=15&t=m&iwloc=near&output=embed"></iframe>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>	
+			<span class="accent"><%= t "stores.hours" %>:</span>
+			<ul class="store">
+				<li><%= t "stores.workdays" %> 9:30 - 20:00</li>
+				<li><%= t "stores.sunday" %>	9:30 - 17:00</li>
+			</ul>
+		</td>
+		<td>
+			<span class="accent"><%= t "stores.nearby" %>:</span>
+			<ul class="store">
+				<li>Āgenskalna tirgus</li>
+				<li>Tirdzniecības centrs</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			
+			<span class="accent"><%= t "stores.reach" %></span>
+
+			<ul class="store">
+				<li><%= image_tag("parking.png") %>
+				 <b><%= t "stores.free" %></b><%= t "stores.parking" %></li>
+				<li class="transport"><%= image_tag("bus.png") %>
+				 46</li>
+				<li class="transport"><%= image_tag("trol.png") %>
+				 5</li>
+				<li class="transport"><%= image_tag("tram.png") %>
+				 2</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		
+		<td colspan="3">
+			<a class="fancybox" rel="nometnu" href="/assets/nometnu/nometnu1.jpg"><img src="/assets/nometnu/nometnu1-thumb.jpg" /></a>
+			<a class="fancybox" rel="nometnu" href="/assets/nometnu/nometnu2.jpg"><img src="/assets/nometnu/nometnu2-thumb.jpg" /></a>
+			<a class="fancybox" rel="nometnu" href="/assets/nometnu/nometnu3.jpg"><img src="/assets/nometnu/nometnu3-thumb.jpg" /></a>
+			<a class="fancybox" rel="nometnu" href="/assets/nometnu/nometnu4.jpg"><img src="/assets/nometnu/nometnu4-thumb.jpg" /></a>
+			<a class="fancybox" rel="nometnu" href="/assets/nometnu/nometnu5.jpg"><img src="/assets/nometnu/nometnu5-thumb.jpg" /></a>
+		</td>
+	</tr>
+</table>
+</div>
+
+<div id="matisa" class="store">
+<table class="store" valign="top" cellpadding="5">
+	<tr><td colspan="2"><h2>Rīga, Matīsa iela 8 <span class="phone"><%= t "stores.phone" %>: 67276797</span></h2></td></tr>
+	<tr>
+		<td rowspan="3" align="left">
+			<iframe width="300" height="285" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=R%C4%ABga%2Bmat%C4%ABsa%2Biela%2B8&ie=UTF8&z=15&t=m&iwloc=near&output=embed"></iframe>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>	
+			<span class="accent"><%= t "stores.hours" %>:</span>
+			<ul class="store">
+				<li><%= t "stores.workdays" %> 9:30 - 20:00</li>
+				<li><%= t "stores.sunday" %>	9:30 - 17:00</li>
+			</ul>
+		</td>
+		<td>
+			<span class="accent"><%= t "stores.nearby" %>:</span>
+			<ul class="store">
+				<li>Vidzemes tirgus</li>
+				<li>T/C "Bērnu pasaule"</li>
+				<li>Dailes teātris</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<span class="accent"><%= t "stores.reach" %></span>
+			<ul class="store">
+				<li><%= image_tag("parking.png") %>
+				 <b><%= t "stores.paid" %></b><%= t "stores.parking" %></li>
+				<li class="transport"><%= image_tag("bus.png") %>
+				 1, 3, 6, 9, 14, 21, 40</li>
+				<li class="transport"><%= image_tag("trol.png") %>
+				 12, 14, 17, 25</li>
+				<li class="transport"><%= image_tag("tram.png") %>
+				 6, 11</li>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<a class="fancybox" rel="matisa" href="/assets/matisa/matisa1.jpg" ><img src="/assets/matisa/matisa1-thumb.jpg" /></a>
+			<a class="fancybox" rel="matisa" href="/assets/matisa/matisa2.jpg" ><img src="/assets/matisa/matisa2-thumb.jpg" /></a>
+			<a class="fancybox" rel="matisa" href="/assets/matisa/matisa3.jpg" ><img src="/assets/matisa/matisa3-thumb.jpg" /></a>
+			<a class="fancybox" rel="matisa" href="/assets/matisa/matisa4.jpg" ><img src="/assets/matisa/matisa4-thumb.jpg" /></a>
+			<a class="fancybox" rel="matisa" href="/assets/matisa/matisa5.jpg" ><img src="/assets/matisa/matisa5-thumb.jpg" /></a>
+		</td>
+	</tr>
+</table>
+</div>
+
+<div id="nicgales" class="store">
+<table class="store" valign="top" cellpadding="5">
+	<tr><td colspan="2"><h2>Rīga, Nīcgales iela 2b  <span class="phone"><%= t "stores.phone" %>: 67562086</span></h2></td></tr>
+	<tr>
+		<td rowspan="3" align="left">
+			<iframe width="300" height="285" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=R%C4%ABga%2BN%C4%ABcgales%2Biela%2B2b&ie=UTF8&z=15&t=m&iwloc=near&output=embed"></iframe>			
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>	
+			<span class="accent"><%= t "stores.hours" %>:</span>
+			<ul class="store">
+				<li><%= t "stores.workdays" %> 9:30 - 20:00</li>
+				<li><%= t "stores.sunday" %>	9:30 - 17:00</li>
+			</ul>
+		</td>
+		<td>
+			<span class="accent"><%= t "stores.nearby" %>:</span>
+			<ul class="store">
+				<li>t/c "Minska"</li>
+				<li>t/c "Domina"</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<span class="accent"><%= t "stores.reach" %></span>
+			<ul class="store">
+				<li><%= image_tag("parking.png") %>
+				 <b><%= t "stores.free" %></b><%= t "stores.parking" %></li>
+				<li class="transport"><%= image_tag("bus.png") %>
+				 3, 6, 13, 47, 50, 52</li>
+				<li class="transport"><%= image_tag("trol.png") %>
+				 11, 16, 22</li>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<a class="fancybox" rel="nicgales" href="/assets/nicgales/nicgales1.jpg" ><img src="/assets/nicgales/nicgales1-thumb.jpg" /></a>
+			<a class="fancybox" rel="nicgales" href="/assets/nicgales/nicgales2.jpg" ><img src="/assets/nicgales/nicgales2-thumb.jpg" /></a>
+			<a class="fancybox" rel="nicgales" href="/assets/nicgales/nicgales3.jpg" ><img src="/assets/nicgales/nicgales3-thumb.jpg" /></a>
+			<a class="fancybox" rel="nicgales" href="/assets/nicgales/nicgales4.jpg" ><img src="/assets/nicgales/nicgales4-thumb.jpg" /></a>
+			<a class="fancybox" rel="nicgales" href="/assets/nicgales/nicgales5.jpg" ><img src="/assets/nicgales/nicgales5-thumb.jpg" /></a>
+		</td>
+	</tr>
+</table>
+</div>
+
+<div id="avotu" class="store">
+<table class="store" valign="top" cellpadding="5">
+	<tr><td colspan="2"><h2>Rīga, Avotu iela 2 <span class="phone"><%= t "stores.phone" %>: 67398291</span></h2></td></tr>
+	<tr>
+		<td rowspan="3" align="left">
+			<iframe width="300" height="285" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=R%C4%ABga%2C%2BAvotu%2Biela%2B2&ie=UTF8&z=15&t=m&iwloc=near&output=embed"></iframe>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>	
+			<span class="accent"><%= t "stores.hours" %>:</span>
+			<ul class="store">
+				<li><%= t "stores.workdays" %> 9:30 - 20:00</li>
+				<li><%= t "stores.sunday" %>	9:30 - 17:00</li>
+			</ul>
+		</td>
+		<td>
+			<span class="accent"><%= t "stores.nearby" %>:</span>
+			<ul class="store">
+				<li>Latvijas Biznesa koledža</li>
+				<li>Vērmanes dārzs</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<span class="accent"><%= t "stores.reach" %></span>
+			<ul class="store">
+				<li><%= image_tag("parking.png") %>
+				 <b><%= t "stores.paid" %></b><%= t "stores.parking" %></li>
+				<li class="transport"><%= image_tag("trol.png") %>
+				 13, 22</li>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<a class="fancybox" rel="avotu" href="/assets/avotu/avotu1.jpg" ><img src="/assets/avotu/avotu1-thumb.jpg" /></a>
+			<a class="fancybox" rel="avotu" href="/assets/avotu/avotu2.jpg" ><img src="/assets/avotu/avotu2-thumb.jpg" /></a>
+			<a class="fancybox" rel="avotu" href="/assets/avotu/avotu3.jpg" ><img src="/assets/avotu/avotu3-thumb.jpg" /></a>
+			<a class="fancybox" rel="avotu" href="/assets/avotu/avotu4.jpg" ><img src="/assets/avotu/avotu4-thumb.jpg" /></a>
+			<a class="fancybox" rel="avotu" href="/assets/avotu/avotu5.jpg" ><img src="/assets/avotu/avotu5-thumb.jpg" /></a>
+		</td>
+	</tr>
+</table>
+</div>
+
+<div id="valdeku" class="store">
+<table class="store" valign="top" cellpadding="5">
+	<tr><td colspan="2"><h2>Rīga, Valdeķu iela 10, <span class="phone"><%= t "stores.phone" %>: 67673901</span></h2></td></tr>
+	<tr>
+		<td rowspan="3" align="left">
+			<iframe width="300" height="285" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=R%C4%ABga%2BValde%C4%B7u%2Biela%2B10&ie=UTF8&z=15&t=m&iwloc=near&output=embed"></iframe>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>	
+			<span class="accent"><%= t "stores.hours" %>:</span>
+			<ul class="store">
+				<li><%= t "stores.workdays2" %> 10:00 - 20:00</li>
+				<li><%= t "store.saturtday" %>   10:00 - 19:00</li>
+				<li><%= t "stores.sunday" %>	10:00 - 17:00</li>
+			</ul>
+		</td>
+		<td>
+			<span class="accent"><%= t "stores.nearby" %>:</span>
+			<ul class="store">
+				<li>Rīgas 2. slimnīca</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<span class="accent"><%= t "stores.reach" %></span>
+			<ul class="store">
+				<li><%= image_tag("parking.png") %>
+				 <b><%= t "stores.free" %></b><%= t "stores.parking" %></li>
+				<li class="transport"><%= image_tag("bus.png") %>
+				 40, 44, 46</li>
+				<li class="transport"><%= image_tag("tram.png") %>
+				 10</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<a class="fancybox" rel="valdeku" href="/assets/valdeku/valdeku1.jpg" ><img src="/assets/valdeku/valdeku1-thumb.jpg" /></a>
+			<a class="fancybox" rel="valdeku" href="/assets/valdeku/valdeku2.jpg" ><img src="/assets/valdeku/valdeku2-thumb.jpg" /></a>
+			<a class="fancybox" rel="valdeku" href="/assets/valdeku/valdeku3.jpg" ><img src="/assets/valdeku/valdeku3-thumb.jpg" /></a>
+			<a class="fancybox" rel="valdeku" href="/assets/valdeku/valdeku4.jpg" ><img src="/assets/valdeku/valdeku4-thumb.jpg" /></a>
+			<a class="fancybox" rel="valdeku" href="/assets/valdeku/valdeku5.jpg" ><img src="/assets/valdeku/valdeku5-thumb.jpg" /></a>
+		</td>
+	</tr>
+</table>
+</div>
+
+<div id="jelgava" class="store">
+<table class="store" valign="top" cellpadding="5">
+	<tr><td colspan="2"><h2>Lielā iela 8, Jelgava <span class="phone"><%= t "stores.phone" %>: 63083330</span></h2></td></tr>
+	<tr>
+		<td rowspan="3" align="left">
+			<iframe width="300" height="285" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Jelgava%2BLiel%C4%81%2Biela%2B8&ie=UTF8&z=15&t=m&iwloc=near&output=embed"></iframe>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>	
+			<span class="accent"><%= t "stores.hours" %>:</span>
+			<ul class="store">
+				<li><%= t "stores.workdays" %> 9:30 - 20:00</li>
+				<li><%= t "stores.sunday" %>	9:30 - 17:00</li>
+			</ul>
+		</td>
+		<td>
+		<span class="accent"><%= t "stores.nearby" %>:</span>
+			<ul class="store">
+				<li>Hercoga Jēkaba laukums</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<span class="accent"><%= t "stores.reach" %></span>
+			<ul class="store">
+				<li><%= image_tag("parking.png") %>
+				 <b><%= t "stores.free" %></b><%= t "stores.parking" %></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<a class="fancybox" rel="jelgava" href="/assets/jelgava/jelgava1.jpg" ><img src="/assets/jelgava/jelgava1-thumb.jpg" /></a>
+			<a class="fancybox" rel="jelgava" href="/assets/jelgava/jelgava2.jpg" ><img src="/assets/jelgava/jelgava2-thumb.jpg" /></a>
+			<a class="fancybox" rel="jelgava" href="/assets/jelgava/jelgava3.jpg" ><img src="/assets/jelgava/jelgava3-thumb.jpg" /></a>
+			<a class="fancybox" rel="jelgava" href="/assets/jelgava/jelgava4.jpg" ><img src="/assets/jelgava/jelgava4-thumb.jpg" /></a>
+			<a class="fancybox" rel="jelgava" href="/assets/jelgava/jelgava5.jpg" ><img src="/assets/jelgava/jelgava5-thumb.jpg" /></a>
+		</td>
+	</tr>
+</table>
+</div>

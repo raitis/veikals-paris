@@ -1,0 +1,99 @@
+#header {
+	width: 980px;
+	margin: 0 auto;
+	margin-top: 70px;
+
+	background: #fff;
+	height: 40px;
+
+	border: 5px solid #fff;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	-moz-border-radius-topright: 25px;
+	-webkit-border-top-left-radius: 25px;
+	-webkit-border-top-right-radius: 25px;
+}
+
+.logo {
+	width: 100px;
+	height: 100px;
+
+	display: block;
+	background-image: url("/assets/paris_logo.png");
+	background-repeat: no-repeat;
+	text-indent: -999px;
+
+	position: absolute;
+	top: 25px;
+
+	background-color: #fff;
+	border: solid 5px #fff;
+	border-radius: 100%;
+
+	margin-left: 40px;
+}
+
+
+.logo:hover {
+	width: 100px;
+	height: 100px;
+
+	display: block;
+	background-image: url("/assets/paris_logo.png");
+	background-repeat: no-repeat;
+	text-indent: -999px;
+
+	position: absolute;
+	top: 25px;
+
+	background-color: #fff;
+	border: solid 5px #fff;
+	border-radius: 100%;
+
+	margin-left: 40px;
+}
+
+span.site_title {
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+td.title {
+	width: 650px;
+	text-align: center;
+}
+
+td.language {
+	min-width: 100px;
+	width: auto;
+	text-align: right;
+}
+
+a.language {
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+
+	color: #ff5500;
+}
+
+a.language:visited {
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 20px;
+
+	color: #ff5500;
+}
+
+a.language:hover {
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: underline;
+
+	color: #ff5500;
+	background-color: transparent;
+}

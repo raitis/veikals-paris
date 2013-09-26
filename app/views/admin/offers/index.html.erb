@@ -1,0 +1,20 @@
+<h1>Offers</h1>
+
+<%= link_to 'New Offer', new_admin_offer_path %><br /><br />
+
+<table>
+  
+<% @admin_offers.each do |admin_offer| %>
+  <tr>
+    <td><%= admin_offer.store %></td>
+    <td><%= admin_offer.content %></td>
+    <td><%= admin_offer.phone %></td>
+    <td><%= link_to 'Show', admin_offer %></td>
+    <td><%= link_to 'Edit', edit_admin_offer_path(admin_offer) %></td>
+    <td><%= button_to 'Delete', admin_offer, method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

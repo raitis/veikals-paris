@@ -1,0 +1,28 @@
+<div id="discounts">
+	<table width="800">
+		<tr>
+			<td class="discount" colspan="4"><span class="news"><%= t "discounts.title" %></span></td>
+		</tr>
+		<tr>
+			<td><%= image_tag("pirmdiena.png", :class => "discount" ) %></td>
+			<td><%= image_tag("tresdiena.png", :class => "discount" ) %></td>
+			<td><%= image_tag("piektdiena.png", :class => "discount" ) %></td>
+			<td><%= image_tag("svetdiena.png", :class => "discount" ) %></td>
+		</tr>
+		<tr>
+			<td class="discount_day"><%= t "discounts.monday" %></td>
+			<td class="discount_day"><%= t "discounts.wednesday" %></td>
+			<td class="discount_day"><%= t "discounts.friday" %></td>
+			<td class="discount_day"><%= t "discounts.sunday" %></td>
+		</tr>		
+		<tr>
+			<td class="discount_amount">-10% <%= t "people.elders" %>*</td>
+			<td class="discount_amount">-10% <%= t "people.students" %>*</td>
+			<td class="discount_amount">-10% <%= t "people.kids" %></td>
+			<td class="discount_amount">-20% <%= t "people.everyone" %></td>
+		</tr> 
+		<tr>
+			<td colspan="4" class="discount_condition">* <%= t "discounts.condition" %></td> 
+		</tr>
+	</table>
+</div>

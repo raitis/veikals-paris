@@ -1,0 +1,62 @@
+lv:
+ navbar:
+  main: "GALVENĀ"
+  about: "PAR MUMS"
+  special: "ĪPAŠAIS PIEDĀVĀJUMS"
+  offers: "PRECE"
+  stores: "VEIKALI"
+  contacts: "KONTAKTI"
+ header:
+  title: "mazlietoti apavi, somas un apģērbi"
+ banner: 
+  text1: "Apavi katram dzīves gadījumam"
+  text2: "Un katram maciņam" 
+  text3: "Pievedumi 6 reizes nedēļā"
+  text4: "Katru dienu kaut kas jauns!"
+  text5: "Oriģinalitāte"
+  text6: "katrs apavu pāris ir vienīgais eksemplārs"
+  text7: "tūkstošiem apavu pāru"
+  text8: "katrā veikalā"
+  text9: "Atlaides un akcijas katru dienu"
+  text10: "Vairāk par atlaidēm"
+ news:
+  title: "kas jauns"
+  readmore: "...lasīt vairāk"
+ days:
+  monday: "pirmdienās "
+  wednesday: "trešdienās "
+  friday: "piektdienās "
+  sunday: "svētdienās "
+ people:
+  elders: "Pensionāriem"
+  students: "Studentiem"
+  kids: "Vecākiem ar bērniem"
+  everyone: "Visam un visiem"
+ discounts: 
+  title: "Atlaižu dienas"
+  condition: "uzrādot apliecinošu dokumentu"
+  monday: "Pirmdiena"
+  wednesday: "Trešdiena"
+  friday: "Piektdiena"
+  sunday: "Svētdiena"
+ footer:
+  follow: "seko mums"
+ about:
+  goals: "Mūsu mērķis"
+  text: "Pasniegt kvalitatīvu preci par pieņemamām cenām. Katru pircēju pieņems kā dārgu viesi un apkalpos augstā līmenī. Uzņēmums visu laiku attīstās. Kopš 2010. gada ir atvērušies 6 veikali."
+ stores:
+  phone: "Tālr"
+  hours: "Darba laiki"
+  nearby: "Tuvumā atrodas"
+  workdays: "P. - S."
+  workdays2: "P. - P."
+  saturtday: "Sest."
+  sunday: "Svētd."
+  reach: "Kā nokļūt"
+  free: "Bezmaksas"
+  paid: "Maksas"
+  parking: " stāvvieta tieši pie veikala."
+ contact:
+  info: "Kontaktinformācija"
+  stores: "Veikali"
+  incharge: "Vadītāja"

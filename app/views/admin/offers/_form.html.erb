@@ -1,0 +1,33 @@
+<%= form_for @admin_offer, :html => { :multipart => true } do |f| %>
+ 
+  <div class="field">
+    <%= f.label :store %><br />
+    <%= f.collection_select(:store, Admin::Store.find(:all), :address, :address) %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+  <div>
+
+    <%= f.fields_for :assets do |asset| %>
+
+    <% if asset.object.new_record? %>
+      <%= asset.file_field :image %><br />
+    <% end %>
+
+    <% end %>
+
+     <%= f.fields_for :assets do |asset| %>
+    <% unless asset.object.new_record? %>
+      <%= image_tag asset.object.image.url, :width => 150 %>
+      <%= asset.check_box :_destroy %> Mark for deletion<br/>
+    <% end %>
+    <% end %>
+
+  </div>
+<% end %>

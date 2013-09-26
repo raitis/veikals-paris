@@ -1,0 +1,14 @@
+ <% if @special.blank? %>
+
+ <% else %>
+ <div id="newsbar">
+	<table width="800">
+		<tr><td class="news"><span class="news"><%= t "news.title" %></span> <span class="published"><%= @special.posted %></span>
+		</td></tr>
+
+		<tr><td class="news_title"><%= @special.title %></td></tr> 
+		<tr><td class="news_text"><%= simple_format(truncate(@special.content, :length => 300, :omission => "...")) %></td></tr>
+		<tr><td class="news_read_more"><%= link_to t("news.readmore"), special_path, :class => 'read_more' %></td></tr>	
+	</table>
+</div>
+<% end %>

@@ -1,0 +1,21 @@
+<div id="header">
+	<table class="header">
+		<tr height="50px">
+			<td align="left" valign="middle" width="200px">
+				<%= link_to "Home", root_path, :class => "logo" %>
+			</td>
+			<td class="title">
+				<span class="site_title"><%= t "header.title" %>
+				</span>
+			</td>
+			<td class="language" >
+				<% if I18n.locale == :ru %>
+					<%= link_to "latviski", {locale: "lv"}, {:class => "language"} %>
+				<% else %>
+					<%= link_to "по русски", {locale: "ru"}, {:class => "language"}  %>
+				<% end %>
+			</td>
+		</tr>
+	</table>
+</div>
+

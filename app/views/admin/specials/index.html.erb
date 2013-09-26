@@ -1,0 +1,17 @@
+<h1>Special offers</h1>
+
+<%= link_to 'New Special', new_admin_special_path %><br /><br />
+
+<table>
+<% @admin_specials.each do |admin_special| %>
+  <tr>
+    <td><%= admin_special.title %></td>
+    <td><%= admin_special.is_published %></td>
+    <td><%= admin_special.posted %></td>
+    <td><%= link_to 'Show', admin_special %></td>
+    <td><%= link_to 'Edit', edit_admin_special_path(admin_special) %></td>
+    <td><%= button_to "Delete", admin_special_path(admin_special), :method=>:delete, :confirm => "Are you sure?" %></td>
+  </tr>
+<% end %>
+</table>
+

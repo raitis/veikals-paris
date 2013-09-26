@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @admin_special.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= simple_format(@admin_special.content) %>
+</p>
+
+<p>
+  <%= image_tag @admin_special.image.url, :width => 720 %>
+</p>
+
+<p>
+  <b>Is published:</b>
+  <%= @admin_special.is_published %>
+</p>
+
+<p>
+  <b>Posted:</b>
+  <%= @admin_special.posted %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_special_path(@admin_special) %> | <%= link_to 'Back', admin_specials_path %>

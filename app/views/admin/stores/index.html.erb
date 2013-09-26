@@ -1,0 +1,19 @@
+<h1>Stores</h1>
+
+<%= link_to 'New Store', new_admin_store_path %><br /><br />
+
+<table>
+<% @admin_stores.each do |admin_store| %>
+  <tr>
+    <td><%= admin_store.name %></td>
+    <td><%= admin_store.phone %></td>
+    <td><%= admin_store.address %></td>
+    <td><%= link_to 'Edit', edit_admin_store_path(admin_store) %></td>
+    <td><%= button_to 'Destroy', admin_store, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

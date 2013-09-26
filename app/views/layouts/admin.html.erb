@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pāris - <%=  yield(:title).presence || 'mazlietoti apavi' %></title>
+  
+  <%= stylesheet_link_tag "admin" %>
+  <%= favicon_link_tag 'favicon.png' %>
+  <%= csrf_meta_tags %>
+  <%= @extra_head_content %>
+
+
+</head>
+<body class="admin">
+
+
+<div id="admin_wrap">
+	<%= render('admin/logout') %>
+	<%= render('admin/navbar') %>
+	<%= yield %>
+</div>
+
+
+</body>
+</html>

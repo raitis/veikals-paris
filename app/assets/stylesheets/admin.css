@@ -1,0 +1,90 @@
+.admin {
+	background: #eee;
+	color: #000;
+	font: 14px Arial;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+#admin_wrap {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 70px;
+
+	border: 1px solid #000;
+	background: #fff;
+
+	padding: 10px;
+}
+
+#admin_navbar {
+	position: relative;
+	display:block;height: 40px;
+	font-size: 14px;
+	font-weight: bold;
+	background: #ccc;
+	font-family: Verdana;
+	width: 750px;
+
+	margin: auto;
+	margin-bottom: 30px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+
+	border: 1px solid #000;
+}
+
+#admin_navbar ul{
+	margin:0px;
+	padding:0;
+	list-style-type:none;
+	width:auto;
+}
+
+#admin_navbar ul li{
+	display:block;
+	float:left;
+	margin:0 1px 0 0;
+}
+
+#admin_navbar ul li a{
+	display:block;
+	float:left;
+	color:#000;
+	text-decoration: none;
+	padding:10px 22px 10px 22px;
+	height:20px;
+
+	transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+}
+
+#admin_navbar ul li a:hover{
+	color:#000;
+	background: #fff;
+
+}
+
+#login {
+	width: 210px;
+	height: 130px;
+	margin: 0 auto;
+	margin-top: 80px;
+
+	background-color: #fff;
+	padding-top: 20px;
+	border: 1px #fff solid;
+	border-radius: 8px;
+
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+.button {
+	text-align: right;
+	margin-right: 20px;
+}

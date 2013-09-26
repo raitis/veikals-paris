@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Store:</b>
+  <%= @admin_offer.store %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @admin_offer.content %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @admin_offer.phone %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_admin_offer_path(@admin_offer) %> |
+<%= link_to 'Back', admin_offers_path %>

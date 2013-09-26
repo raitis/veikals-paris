@@ -1,0 +1,14 @@
+<h1>Users</h1>
+
+<%= link_to 'New user', new_admin_user_path %><br /><br />
+
+<table>
+<% @users.each do |user| %>
+
+  <tr>
+    <td><%= user.email %></td>
+    <td><% unless user.email == "raitis.medis@gmail.com" %><%= button_to 'Delete user', user, method: :delete, data: { confirm: 'Are you sure?' } %><% end %></td>
+  </tr>
+
+<% end %>
+</table>

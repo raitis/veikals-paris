@@ -1,0 +1,29 @@
+<%= form_for @admin_special, :html => { :multipart => true } do |f| %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_area :content, :cols => 100, :rows => 30 %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br />
+    <%= f.file_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :video %><br />
+    <%= f.text_field :video %>
+  </div>
+  <div class="field">
+    <%= f.label :is_published %><br />
+    <%= f.check_box :is_published %>
+  </div>
+  <div class="field">
+    <%= f.date_select :posted, :order => [:day,:month,:year], :discard_day => true, :discard_month => true, :discard_year => true  %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,30 @@
+<%= form_for(@admin_store) do |f| %>
+  <% if @admin_store.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@admin_store.errors.count, "error") %> prohibited this admin_store from being saved:</h2>
+
+      <ul>
+      <% @admin_store.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <p></p>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,30 @@
+table.offer {
+	width: 800px;
+}
+
+td.pictures {
+	width: 180px;
+	padding: 10px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.cropped {
+	width: 150px;
+    height: 100px;
+}
+
+td.offer {
+	padding: 10px;
+	text-align: left;
+
+	font-size: 1.4em;
+}
+
+td.info {
+	padding: 10px;
+	text-align: left;
+	vertical-align: bottom;
+
+	font-size: 1.2em;
+}

@@ -1,0 +1,16 @@
+
+<div class="login" id="login">
+<%= form_tag sessions_path do %>
+<table class="login">
+	<tr><td>
+    	<%= text_field_tag :email, params[:email], :placeholder => "Email" %>
+   
+   		<span id="password_field">
+    	<%= text_field_tag :password, params[:password], :placeholder => "Password", :onfocus => "return makeItPassword()" %>
+   		</span>
+
+   <%= submit_tag "Login" %>
+</td></tr>
+ </table>
+<% end %>
+</div>
