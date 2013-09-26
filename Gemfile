@@ -14,6 +14,7 @@ gem 'closure-compiler'
 gem 'paperclip'
 gem 'globalize3'
 gem 'metamagic'
+gem 'jquery-rails'
 
 
 # Gems used only for assets and not required
@@ -31,8 +32,3 @@ end
 group :production do
 	gem 'pg'
 end
-
-gem 'jquery-rails'
-gem 'execjs'
-gem 'therubyracer'
-
