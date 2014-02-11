@@ -34,4 +34,14 @@ Website::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['VEIKALS-PARIS'],
+    :access_key_id => ENV['AKIAI4RCHL4Q5GJRK6GQ'],
+    :secret_access_key => ENV['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']
+  }
+}
+
 end

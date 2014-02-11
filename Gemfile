@@ -10,6 +10,7 @@ end
 
 gem "bcrypt-ruby", :require => "bcrypt"
 gem "tinymce-rails"
+gem 'aws-sdk'
 gem 'closure-compiler'
 gem 'paperclip'
 gem 'globalize3'
