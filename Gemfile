@@ -12,6 +12,7 @@ gem "bcrypt-ruby", :require => "bcrypt"
 gem "tinymce-rails"
 gem 'closure-compiler'
 gem 'paperclip'
+gem 'aws-sdk'
 gem 'globalize3'
 gem 'metamagic'
 gem 'jquery-rails'
