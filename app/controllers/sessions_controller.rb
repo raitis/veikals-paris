@@ -1,3 +1,5 @@
+require 'bcrypt'
+
 class SessionsController < ApplicationController
   layout 'login'
   def new
