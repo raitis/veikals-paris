@@ -17,6 +17,7 @@ gem 'globalize3'
 gem 'metamagic'
 gem 'jquery-rails'
 gem 'google-api-client', '~> 0.7.1'
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -30,6 +31,5 @@ group :assets do
   gem 'uglifier'
 end
 
-group :production do
-	gem 'pg'
-end
+
+
