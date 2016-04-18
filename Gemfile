@@ -16,6 +16,8 @@ gem "paperclip", "~> 3.5.3"
 gem 'globalize3'
 gem 'metamagic'
 gem 'jquery-rails'
+gem 'google-api-client', '~> 0.7.1'
+gem 'i18n', github: 'svenfuchs/i18n'
 
 
 # Gems used only for assets and not required
