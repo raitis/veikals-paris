@@ -8,11 +8,6 @@ group :development, :test do
 	gem 'sqlite3', '1.3.11'
 end
 
-group :production do
-  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
-  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
-end
-
 gem "bcrypt-ruby", :require => "bcrypt"
 gem "tinymce-rails"
 gem 'closure-compiler'
