@@ -53,7 +53,7 @@
 	
 	$.Accordion.defaults 		= {
 		// index of opened item. -1 means all are closed by default.
-		open			: 0,
+		open			: -1,
 		// if set to true, only one item can be opened. Once one item is opened, any other that is opened will be closed first
 		oneOpenedItem	: false,
 		// speed of the open / close item animation
